@@ -14,11 +14,11 @@ describe('Home Page tests', () => {
         cy.title().should('eq', 'Automation Exercise')
     })
 
-    it('Logo validation', () => {
+    it('Should display the logo', () => {
         cy.get('img[alt="Website for automation practice"]').should('be.visible')
     })
 
-    it('Navbar validation', () => {
+    it('Should display the main navigation bar', () => {
         cy.get('.nav.navbar-nav').should('be.visible')
     })
 }) 
