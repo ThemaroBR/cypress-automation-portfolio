@@ -17,4 +17,8 @@ describe('Home Page tests', () => {
     it('Logo validation', () => {
         cy.get('img[alt="Website for automation practice"]').should('be.visible')
     })
+
+    it('Navbar validation', () => {
+        cy.get('.nav.navbar-nav').should('be.visible')
+    })
 }) 
