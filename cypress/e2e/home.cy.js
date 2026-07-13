@@ -1,9 +1,11 @@
 /// <reference types="cypress" />
 
+import homePage from "../page-objects/homePage"
+
 describe('Home Page tests', () => {
 
     beforeEach(() => {
-        cy.visit('https://automationexercise.com/')
+        homePage.visit()
     })
 
     it('URL validation', () => {

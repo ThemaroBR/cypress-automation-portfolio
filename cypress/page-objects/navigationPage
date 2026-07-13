@@ -1,0 +1,23 @@
+class NavigationPage {
+    visit() {
+        cy.visit('/')
+    }
+
+    clickProducts() {
+        cy.contains('.navbar-nav a', 'Products').click()
+    }
+
+    clickCart() {
+        cy.contains('.navbar-nav a', 'Cart').click()
+    }
+
+    clickLogin() {
+        cy.contains('.navbar-nav a', 'Signup / Login').click()
+    }
+
+    clickContactUs() {
+        cy.contains('.navbar-nav a', 'Contact us').click()
+    }
+}
+
+export default new NavigationPage()
