@@ -4,6 +4,9 @@ class SignUpPage {
         cy.visit('/')
     }
 
+    enterName(name) {
+        cy.get('[data-qa="signup-name"]').type(name)
+    }
 
 
 

@@ -5,11 +5,11 @@ import NavigationPage from "../page-objects/navigationPage"
 
 describe('Sign Up Screen', () => {
 
-    beforeEach(() => {
-        NavigationPage.visit()
+    it('Should create New User', () => {
+        NavigationPage.clickLogin()
     })
 
-    it.only('Should create New User', () => {
-        NavigationPage.clickLogin()
+    it('Should type User Name', () => {
+        signUpPage.enterName('Mário Filho')
     })
 })
