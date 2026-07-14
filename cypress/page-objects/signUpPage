@@ -1,0 +1,11 @@
+class SignUpPage {
+
+    visit() {
+        cy.visit('/')
+    }
+
+
+
+
+}
+export default new SignUpPage()
