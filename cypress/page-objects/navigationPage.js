@@ -1,7 +1,4 @@
 class NavigationPage {
-    visit() {
-        cy.visit('/')
-    }
 
     clickProducts() {
         cy.contains('.navbar-nav a', 'Products').click()
@@ -11,7 +8,7 @@ class NavigationPage {
         cy.contains('.navbar-nav a', 'Cart').click()
     }
 
-    clickLogin() {
+    clickSignupLogin() {
         cy.contains('.navbar-nav a', 'Signup / Login').click()
     }
 

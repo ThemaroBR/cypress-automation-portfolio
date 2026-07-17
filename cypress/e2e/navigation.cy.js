@@ -5,7 +5,7 @@ import NavigationPage from "../page-objects/navigationPage"
 describe('Navigation Menu', () => {
 
     beforeEach(() => {
-        NavigationPage.visit()
+        cy.visit('/')
     })
 
     it('Should navigate to Products page', () => {
@@ -19,7 +19,7 @@ describe('Navigation Menu', () => {
     })
 
     it('Should navigate to Signup/Login page', () => {
-        NavigationPage.clickLogin()
+        NavigationPage.clickSignupLogin()
         cy.url().should('include', '/login')
     })
 
